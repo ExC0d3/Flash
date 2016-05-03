@@ -1,0 +1,7 @@
+0000000000000000000000000000000000000000 4876c3bdf79c068df4e3f09b36ae762d0252d5bb ExC0d3 <sharma.abhinav503@gmail.com> 1462087940 +0530	commit (initial): initial commit
+4876c3bdf79c068df4e3f09b36ae762d0252d5bb 920221568c4670c2e25093daacd0f1bce1392a1d ExC0d3 <sharma.abhinav503@gmail.com> 1462089428 +0530	commit: basic setup for taking input
+920221568c4670c2e25093daacd0f1bce1392a1d 34bfe765fd25e39445f915ed01f54c9da7da679a ExC0d3 <sharma.abhinav503@gmail.com> 1462090559 +0530	commit: parseDirectory function step 1
+34bfe765fd25e39445f915ed01f54c9da7da679a 22ab61a4932d8cac33f2b5ba6b3d5ebc88591382 ExC0d3 <sharma.abhinav503@gmail.com> 1462091058 +0530	commit: parseDirectory step 2 complete
+22ab61a4932d8cac33f2b5ba6b3d5ebc88591382 640ef01e54a18050866d570125afc1d8b0bc7140 ExC0d3 <sharma.abhinav503@gmail.com> 1462091441 +0530	commit: parseDirectory step 3 complete - directory listing available in array
+640ef01e54a18050866d570125afc1d8b0bc7140 26106a31bc87d8dc4f16aaa140b56078bf3df297 ExC0d3 <sharma.abhinav503@gmail.com> 1462091598 +0530	commit: mid project code cleanup
+26106a31bc87d8dc4f16aaa140b56078bf3df297 93b7cd7d89aa36290ff1ffcef7cab50a166a4eff ExC0d3 <sharma.abhinav503@gmail.com> 1462100814 +0530	commit: partially completed function to separate files from sub directories

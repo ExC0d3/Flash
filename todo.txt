@@ -1,0 +1,2 @@
+1) Modify error to be user friendly based on error codes
+4) Handle maxBuffer error { [Error: stdout maxBuffer exceeded] cmd: '/bin/sh -c find /home/abhinav -name "*.txt"' }

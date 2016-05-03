@@ -1,0 +1,5 @@
+{
+	"include":[".txt",".nfo",".jpg",".png"],
+	"exclude":[".mp4",".mkv",".avi"],
+	"size":1
+}
