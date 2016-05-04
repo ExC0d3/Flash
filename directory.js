@@ -94,9 +94,9 @@ export const createDump = (path) => {
 	});
 };
 
-export const dirtyMove = (path) => {
+export const dirtyMove = (path,ext) => {
 	return new Promise((resolve,reject) => {
-		console.log(`find ${path} -name \"*.nfo\" -exec mv {} ${path}/dump \\;`);
+		console.log(`find ${path} -name \"*${ext}\" -exec mv {} ${path}/dump \\;`);
 		
 		let workProcess = child_process.exec(`find ${path} -name \"*.nfo\" -exec mv {} ${path}/dump \\;`, (err,stdout,stderr) => {
 			if(err){
