@@ -5,14 +5,14 @@ import {
 	checkAndModify,
 	createDump,
 	dirtyMove,
+	getConfig,
 } from './directory'
 
 
 getDirectory()
-	.then( data => checkAndModify("/media/abhinav/New Volume/TV/Flash"))
-	.then( data => dirtyMove(data))
+	.then( data => getConfig())
 	.then( data => {
-		console.log(data);
+		console.log(Object.keys(data));
 		process.exit(0);
 	})
 	.catch( err => {

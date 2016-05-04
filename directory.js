@@ -109,4 +109,17 @@ export const dirtyMove = (path) => {
 			resolve(stdout);
 		});
 	});
-};
+}; 
+
+export const getConfig = () => {
+	
+	return new Promise((resolve,reject) => {
+		let contents = fs.readFile('./config.json','utf-8',(err,output) => {
+			if(err){
+				reject(err);
+			}
+			resolve(JSON.parse(output.toString()));
+		});
+		
+	});
+}
