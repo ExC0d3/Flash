@@ -98,7 +98,7 @@ export const dirtyMove = (path) => {
 	return new Promise((resolve,reject) => {
 		console.log(`find ${path} -name \"*.nfo\" -exec mv {} ${path}/dump \\;`);
 		
-		let workProcess = child_process.exec(`find ${path} -name \"*.nfo\" -exec mv {} ${path}\dump \\;`, (err,stdout,stderr) => {
+		let workProcess = child_process.exec(`find ${path} -name \"*.nfo\" -exec mv {} ${path}/dump \\;`, (err,stdout,stderr) => {
 			if(err){
 				console.log('Dirty move failed');
 				console.log(err);
