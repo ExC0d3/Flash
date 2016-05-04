@@ -94,8 +94,17 @@ export const createDump = (path) => {
 	});
 };
 
-export const moveJunk = (junk,dump) => {
+export const dirtyMove = (path) => {
 	return new Promise((resolve,reject) => {
-		
+		let workProcess = child_process.exec(`find ${path} -name \"*.txt\" -exec mv {} dump \;`, (err,stdout,stderr) => {
+			if(err){
+				console.log('Dirty move failed');
+				console.log(err);
+				reject(err);
+			}
+			console.log(stdout);
+			console.log(stderr);
+			resolve(stdout);
+		});
 	});
-}
+};

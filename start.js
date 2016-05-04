@@ -4,12 +4,13 @@ import {
 	sizeOrganized,
 	checkAndModify,
 	createDump,
+	dirtyMove,
 } from './directory'
 
 
 getDirectory()
 	.then( data => checkAndModify("/media/abhinav/New Volume/TV/Flash"))
-	.then( data => createDump(data))
+	.then( data => dirtyMove(data))
 	.then( data => {
 		console.log(data);
 		process.exit(0);
