@@ -94,8 +94,32 @@ export const createDump = (path) => {
 	});
 };
 
-export const moveJunk = (junk,dump) => {
+export const dirtyMove = (path,ext) => {
 	return new Promise((resolve,reject) => {
+		console.log(`find ${path} -name \"*${ext}\" -exec mv {} ${path}/dump \\;`);
+		
+		let workProcess = child_process.exec(`find ${path} -name \"*${ext}\" -exec mv {} ${path}/dump \\;`, (err,stdout,stderr) => {
+			if(err){
+				console.log('Dirty move failed');
+				console.log(err);
+				reject(err);
+			}
+			console.log('Dirty move for extension ', ext);
+			console.log(stdout);
+			console.log(stderr);
+			resolve(stdout);
+		});
+	});
+}; 
+
+export const getConfig = () => {	
+	return new Promise((resolve,reject) => {
+		let contents = fs.readFile('./config.json','utf-8',(err,output) => {
+			if(err){
+				reject(err);
+			}
+			resolve(JSON.parse(output.toString()));
+		});
 		
 	});
 }

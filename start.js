@@ -4,13 +4,30 @@ import {
 	sizeOrganized,
 	checkAndModify,
 	createDump,
+	dirtyMove,
+	getConfig,
 } from './directory'
 
-
+let path = '';
 getDirectory()
-	.then( data => checkAndModify("/media/abhinav/New Volume/TV/Flash"))
-	.then( data => createDump(data))
+	.then( data => checkAndModify(data))
 	.then( data => {
+		path = data;
+		return getConfig();
+	})
+	.then( data => {
+		createDump(path);
+		return data;
+	})
+	.then( data => {
+		let include = data.include;
+		let exclude = data.exclude;
+		
+		return Promise.all(include.map( datum => {
+			dirtyMove(path,datum);
+		}));
+	})
+	.then(data => {
 		console.log(data);
 		process.exit(0);
 	})
