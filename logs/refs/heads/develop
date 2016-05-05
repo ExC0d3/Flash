@@ -1,5 +1,0 @@
-0000000000000000000000000000000000000000 93b7cd7d89aa36290ff1ffcef7cab50a166a4eff ExC0d3 <sharma.abhinav503@gmail.com> 1462255913 +0530	branch: Created from master
-93b7cd7d89aa36290ff1ffcef7cab50a166a4eff a14b5e49fbe750cf8733496ef248246347e342b2 ExC0d3 <sharma.abhinav503@gmail.com> 1462260093 +0530	commit: added function to convert spaces to back slash values
-a14b5e49fbe750cf8733496ef248246347e342b2 980b37c006d760f7a4dbbf3d030798b294d42a19 ExC0d3 <sharma.abhinav503@gmail.com> 1462260208 +0530	commit: added function to classify the files by extension
-980b37c006d760f7a4dbbf3d030798b294d42a19 df86548c2385abb83c9cf12e392474bffc59b84c ExC0d3 <sharma.abhinav503@gmail.com> 1462260707 +0530	commit: added function to classify the files by size
-df86548c2385abb83c9cf12e392474bffc59b84c d0f262d3ff978c38a41041efa90aa1e1cb862e22 ExC0d3 <sharma.abhinav503@gmail.com> 1462305027 +0530	commit: added function to create dump directory
