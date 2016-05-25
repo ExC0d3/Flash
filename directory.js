@@ -10,8 +10,10 @@ export const getDirectory = ()=>{
 		rl.question('Path to directory ?', (path)=>{
 			if(path.length <=0 ){
 				console.error('Please enter a valid path');
+				rl.close();
 				reject(new Error('Invalid file path'));
 			} else {
+				rl.close();
 				resolve(path);
 			}
 		});
